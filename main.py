@@ -15,7 +15,7 @@ my_email = os.environ.get("MY_EMAIL")
 password = os.environ.get("PASSWORD")
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get("SECRET_KY")
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 ckeditor = CKEditor(app)
 Bootstrap(app)
 Gravatar(app)
