@@ -209,6 +209,7 @@ def edit_post(post_id):
         post.img_url = edit_form.img_url.data
         post.author = edit_form.author.data
         post.body = edit_form.body.data
+        db.session.add(post)
         db.session.commit()
         return redirect(url_for("show_post", post_id=post.id))
 
